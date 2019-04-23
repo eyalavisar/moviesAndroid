@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">MoviesDb</string>
+    <string name="land_movie_title">title</string>
+    <string name="land_movie_overview">overview</string>
+    <string name="land_movie_url">url</string>
+    <string name="land_movie_watched">watched</string>
+    <string name="land_movie_save">save</string>
+    <string name="internet_movie_to_search">movie to search</string>
+    <string name="internet_search_movie">search movie</string>
+    <string name="edit_title">title</string>
+    <string name="menu_edit">edit</string>
+    <string name="menu_delete">delete</string>
+    <string name="options_exit">exit</string>
+    <string name="options_delete_All">delete All</string>
+    <string name="options_Add_Movie_Manually">Add Movie Manually
+                                                        </string>
+    <string name="options_Add_Movie_Internet">Add Movie From Internet
+                                                        </string>
+</resources>

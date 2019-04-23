@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.EditMovie">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText android:id="@+id/editTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:hint="@string/edit_title"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/titleLayout">
+
+
+        <EditText android:id="@+id/editBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:enabled="true"
+            android:minLines="0"
+            android:maxLines="6"
+            android:isScrollContainer="true"
+            android:focusable="true"
+            android:hint="@string/land_movie_overview"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/urlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/bodyLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/land_movie_url"/>
+
+        <EditText android:id="@+id/editUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/urlLayout"
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/image"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/imageLayout"
+        android:id="@+id/ratingBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ratingBar"
+            android:gravity="center"
+            android:numStars="10"
+            android:rating="5"
+            android:isIndicator="false"
+            android:fitsSystemWindows="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ratingBarLayout"
+        android:id="@+id/isWatchedLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <CheckBox android:textSize="38px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/land_movie_watched"
+            android:id="@+id/isWatched"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/isWatchedLayout"
+        android:id="@+id/saveButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <Button
+            android:text="@string/land_movie_save"
+            android:textSize="38px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/saveBtn"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
